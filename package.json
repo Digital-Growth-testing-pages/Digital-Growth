@@ -1,0 +1,32 @@
+{
+  "name": "digital-growth-kh",
+  "version": "1.0.0",
+  "description": "Digital Growth KH - SEO, AEO & AI Marketing Agency Website",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25"
+  },
+  "keywords": [
+    "digital-marketing",
+    "seo",
+    "aeo",
+    "ai-marketing",
+    "cambodia"
+  ],
+  "author": "Digital Growth KH",
+  "license": "MIT"
+}

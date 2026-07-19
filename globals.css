@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #0a0c0f;
+  color: #e0e4f0;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(0, 240, 255, 0.03) 0px, rgba(0, 240, 255, 0.03) 1px, transparent 1px, transparent 30px),
+    repeating-linear-gradient(90deg, rgba(255, 42, 109, 0.03) 0px, rgba(255, 42, 109, 0.03) 1px, transparent 1px, transparent 30px),
+    radial-gradient(circle at 15% 30%, rgba(0, 240, 255, 0.1) 0px, transparent 3px),
+    radial-gradient(circle at 80% 20%, rgba(255, 42, 109, 0.1) 0px, transparent 4px),
+    radial-gradient(circle at 45% 70%, rgba(57, 255, 20, 0.08) 0px, transparent 3px),
+    radial-gradient(circle at 90% 85%, rgba(0, 240, 255, 0.08) 0px, transparent 4px);
+  background-size: 30px 30px, 30px 30px, 100px 100px, 100px 100px, 100px 100px, 100px 100px;
+  background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+  pointer-events: none;
+  z-index: -1;
+}

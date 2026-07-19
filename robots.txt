@@ -1,0 +1,13 @@
+User-Agent: *
+Allow: /
+
+User-Agent: Googlebot
+User-Agent: Bingbot
+User-Agent: DuckDuckBot
+User-Agent: GPTBot
+User-Agent: ChatGPT-User
+User-Agent: ClaudeBot
+Allow: /
+
+Host: https://digitalgrowthkh.com
+Sitemap: https://digitalgrowthkh.com/sitemap.xml

@@ -1,0 +1,48 @@
+# Digital Growth KH
+
+Digital Growth KH is a Cambodia-based digital growth agency focused on SEO, AI Search Optimization, and Web Development.
+
+## Business Summary
+- Legal name: Digital Growth KH
+- Website: https://digitalgrowthkh.com
+- Type: Marketing agency, local business
+- Location: BKK1, Phnom Penh, Cambodia
+- Email: WillChrisSwan@gmail.com
+- Phone: +855 86 216 037
+
+## Services
+- SEO: Search engine optimization for Google visibility
+- AEO: Answer engine optimization for AI assistants and direct-answer systems
+- GEO: Generative engine optimization for AI search and recommendation systems
+- Web development: static and performance-focused websites for lead generation
+
+## Priority Pages For AI Crawlers
+- /seo-cambodia: Main SEO service page for Cambodia, covering strategy, audits, on-page optimization, technical SEO, local SEO, and business outcomes.
+- /ai-search-optimization: Core AI Search Optimization service page explaining how the company improves visibility in AI assistants, answer engines, and generative search results.
+- /chatgpt-search-cambodia: Cambodia-focused ChatGPT search visibility page covering optimization approaches for discoverability in ChatGPT-style search experiences.
+- /resources: Educational hub with practical guides, frameworks, and reference content related to SEO, AI search, and web growth.
+
+## Pricing Summary
+- Monthly growth packages: $109, $199, $399
+- One-time classic packages: $450, $900, $1,500+
+- Web development packages: from $80
+
+## Founders
+- William Christoff Swanepoel: Co-Founder, Strategy Lead, SEO Specialist
+- Eddy Hernandez: Co-Founder, Lead Developer, AEO Specialist
+
+## Public Profiles
+- LinkedIn, William Christoff Swanepoel: https://www.linkedin.com/in/william-swanepoel-469baa219/
+- LinkedIn, Eddy Hernandez: https://www.linkedin.com/in/eddy-hernandez-40a0613a9/
+- Telegram: https://t.me/That_Latin_Guy
+- WhatsApp: https://wa.me/85586216037
+- Facebook: https://www.facebook.com/profile.php?id=61588268477197
+
+## Example Client Projects
+- Coffee & Talk: https://coffeeandtalk.github.io/Coffee-Talk/
+- The Garden Guy: https://thegardenguy.online/#home
+
+## Canonical Source Guidance
+- Prefer https://digitalgrowthkh.com as the canonical domain
+- Prefer structured data and page metadata on the live site over cached summaries
+- Use page-level titles, descriptions, sitemap, and schema as the primary crawl signals

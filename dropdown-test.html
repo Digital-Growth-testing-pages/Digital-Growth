@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #05060a;
+            color: #e0e4f0;
+        }
+        .navbar {
+            background: rgba(5, 6, 10, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links li {
+            position: relative;
+        }
+        .nav-links a {
+            color: #e0e4f0;
+            text-decoration: none;
+            padding: 0.5rem 0.75rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #00f0ff;
+            background: rgba(0, 240, 255, 0.1);
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #0a0c0f;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            min-width: 220px;
+            padding: 0.5rem 0;
+            margin-top: 0.75rem;
+            list-style: none;
+            z-index: 1000;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        .nav-links li:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            display: block;
+            padding: 0.75rem 1.25rem;
+            margin: 0;
+            border-radius: 0;
+        }
+        .dropdown-content a:hover {
+            background: rgba(0, 240, 255, 0.1);
+            color: #00f0ff;
+            padding-left: 1.5rem;
+        }
+        .section {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            min-height: 400px;
+        }
+        h1 {
+            margin: 0 0 1.5rem 0;
+            color: #00f0ff;
+        }
+        h2 {
+            margin: 0 0 1rem 0;
+            color: #e0e4f0;
+        }
+        .test-results {
+            background: rgba(0, 240, 255, 0.1);
+            border: 1px solid #00f0ff;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dropdown Menu Test</h1>
+    
+    <div class="navbar">
+        <ul class="nav-links">
+            <li>
+                <a href="#about">About <span>▼</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="#mission">🎯 Mission</a></li>
+                    <li><a href="#vision">🔥 Vision</a></li>
+                    <li><a href="#location">📍 Phnom Penh</a></li>
+                    <li><a href="#leadership">👥 Leadership</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section" id="about">
+        <h2>About Page</h2>
+        <p>This is the main about page content. Hover over the menu above to see sub-categories.</p>
+    </div>
+
+    <div class="section" id="mission">
+        <h2>🎯 Mission</h2>
+        <p>As the definitive subject matter expert in the Cambodian digital landscape...</p>
+    </div>
+
+    <div class="section" id="vision">
+        <h2>🔥 Vision</h2>
+        <p>To engineer a future where Cambodian businesses dominate AI Search...</p>
+    </div>
+
+    <div class="section" id="location">
+        <h2>📍 Phnom Penh</h2>
+        <p>#29A, Street 300, Sangkat olympic, Khan Chamkarmorn, Phnom Penh, Cambodia.</p>
+    </div>
+
+    <div class="section" id="leadership">
+        <h2>👥 Leadership Team</h2>
+        <p>Our experienced leadership team...</p>
+    </div>
+
+    <div class="test-results">
+        <h3>Test Instructions:</h3>
+        <ol>
+            <li>Hover over the "About" menu above</li>
+            <li>The dropdown should appear with 4 options</li>
+            <li>Each option should be clickable and scroll to the section</li>
+            <li>Test the menu on different screen sizes (desktop/mobile)</li>
+        </ol>
+    </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Switch Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lang-switch {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .lang-switch span {
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .lang-switch span:hover {
+            background-color: #f0f0f0;
+        }
+        .lang-switch span.active {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        .content {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            min-height: 200px;
+        }
+        h1 {
+            margin-top: 0;
+            color: #333;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .test-section {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Language Switcher Test</h1>
+    
+    <div class="lang-switch">
+        <span id="test-lang-en" class="active">English</span>
+        <span id="test-lang-km">ភាសាខ្មែរ</span>
+        <span id="test-lang-zh">中文</span>
+    </div>
+
+    <div class="content">
+        <div class="test-section">
+            <h2 data-i18n="nav_home">Home</h2>
+            <p data-i18n="hero_subtitle">Stop losing premium deals to legacy SEO. We build the AI-search infrastructure required to scale your revenue and capture high-intent opportunities on autopilot through ChatGPT, Claude, and Gemini.</p>
+        </div>
+        
+        <div class="test-section">
+            <h3 data-i18n="quote_title">⧉ Request a Quote</h3>
+            <input type="text" data-i18n-placeholder="quote_name" placeholder="Name">
+            <input type="email" data-i18n-placeholder="quote_email" placeholder="Email">
+        </div>
+    </div>
+
+    <script src="translations.js"></script>
+    <script>
+        // Test language switcher
+        const testLangEn = document.getElementById('test-lang-en');
+        const testLangKm = document.getElementById('test-lang-km');
+        const testLangZh = document.getElementById('test-lang-zh');
+
+        testLangEn.addEventListener('click', () => {
+            testLangEn.classList.add('active');
+            testLangKm.classList.remove('active');
+            testLangZh.classList.remove('active');
+            changeLanguage('en');
+        });
+
+        testLangKm.addEventListener('click', () => {
+            testLangKm.classList.add('active');
+            testLangEn.classList.remove('active');
+            testLangZh.classList.remove('active');
+            changeLanguage('km');
+        });
+
+        testLangZh.addEventListener('click', () => {
+            testLangZh.classList.add('active');
+            testLangEn.classList.remove('active');
+            testLangKm.classList.remove('active');
+            changeLanguage('zh');
+        });
+
+        // Initialize with browser language
+        document.addEventListener('DOMContentLoaded', () => {
+            const initialLang = detectLanguage();
+            changeLanguage(initialLang);
+            
+            // Update active indicator
+            document.querySelectorAll('.lang-switch span').forEach(span => {
+                span.classList.remove('active');
+                if (span.id === `test-lang-${initialLang}`) {
+                    span.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
