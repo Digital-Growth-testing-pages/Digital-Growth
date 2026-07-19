@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f0ff;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:0.15" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background gradient -->
+  <rect width="1200" height="800" fill="url(#bgGradient)" />
+  
+  <!-- Laptop body -->
+  <g opacity="0.2">
+    <!-- Laptop screen -->
+    <rect x="200" y="150" width="800" height="500" rx="10" fill="#ffffff" />
+    
+    <!-- Screen glow -->
+    <rect x="220" y="170" width="760" height="460" rx="5" fill="url(#bgGradient)" />
+    
+    <!-- Screen border -->
+    <rect x="200" y="150" width="800" height="500" rx="10" fill="none" stroke="#00f0ff" stroke-width="2" />
+    
+    <!-- Laptop base -->
+    <rect x="150" y="650" width="900" height="50" rx="5" fill="#1a1a1a" />
+    
+    <!-- Keyboard area -->
+    <rect x="180" y="680" width="840" height="30" rx="3" fill="#2a2a2a" />
+    
+    <!-- Trackpad -->
+    <rect x="500" y="660" width="200" height="40" rx="3" fill="#3a3a3a" />
+    
+    <!-- Laptop stand -->
+    <rect x="300" y="700" width="600" height="20" rx="3" fill="#4a4a4a" />
+    
+    <!-- Screen content (AI interface) -->
+    <g transform="translate(220, 170)">
+      <!-- AI chat bubbles -->
+      <ellipse cx="400" cy="200" rx="350" ry="150" fill="none" stroke="#a5ff00" stroke-width="2" opacity="0.3" />
+      <ellipse cx="400" cy="350" rx="300" ry="120" fill="none" stroke="#00f0ff" stroke-width="2" opacity="0.2" />
+      
+      <!-- Binary code pattern -->
+      <text x="400" y="250" text-anchor="middle" font-family="monospace" font-size="48" fill="#a5ff00" opacity="0.3">10101010</text>
+      <text x="400" y="380" text-anchor="middle" font-family="monospace" font-size="36" fill="#00f0ff" opacity="0.2">AI ENABLED</text>
+    </g>
+  </g>
+  
+  <!-- Floating geometric shapes -->
+  <g opacity="0.1">
+    <circle cx="100" cy="100" r="60" fill="none" stroke="#ff00ff" stroke-width="3" />
+    <rect x="1000" y="150" width="120" height="120" rx="5" fill="none" stroke="#a5ff00" stroke-width="2" />
+    <polygon points="50, 600 150, 550 120, 700" fill="none" stroke="#00f0ff" stroke-width="2" />
+    <ellipse cx="1050" cy="650" rx="40" ry="60" fill="none" stroke="#ff00ff" stroke-width="2" />
+  </g>
+</svg>
